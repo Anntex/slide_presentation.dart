@@ -47,19 +47,19 @@ class Presentation {
   void handleKeyboardInput(keyCode)
   {
     switch(keyCode) {
-      case 32:                // space key
+      case KeyCode.SPACE:     // space key
         this._nextSlide();
         break;
-      case 38:                // arrow key up
+      case KeyCode.UP:        // arrow key up
         this._nextSlide();
         break;
-      case 39:                // arrow key right
+      case KeyCode.RIGHT:     // arrow key right
         this._nextSlide();
         break;
-      case 37:                // arrow key left
+      case KeyCode.LEFT:      // arrow key left
         this._previousSlide();
         break;
-      case 40:                // arrow key down
+      case KeyCode.DOWN:      // arrow key down
         this._previousSlide();
         break;
     }
