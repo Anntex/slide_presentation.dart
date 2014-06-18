@@ -1,0 +1,5 @@
+name: slide_presentation.dart
+description: A sample presentation tool based on Google Dart
+author: Dennis Grewe [dg060@hdm-stuttgart.de]
+dependencies:
+  browser: any
