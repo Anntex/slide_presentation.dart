@@ -7,7 +7,7 @@ import 'dart:html';
  * directory. The name of the html file must the same as the identifier of the html content
  * element.
  * 
- * author: dennis.grewe [dg060@hdm-stuttgart.de] 05/27/2014
+ * author: dennis.grewe [dg060@hdm-stuttgart.de] 06/25/2014
  */
 class Presentation {
   
@@ -51,7 +51,7 @@ class Presentation {
         this._nextSlide();
         break;
       case 38:                // arrow key up
-        this._nextSlide();
+        this._previousSlide();
         break;
       case 39:                // arrow key right
         this._nextSlide();
@@ -60,7 +60,7 @@ class Presentation {
         this._previousSlide();
         break;
       case 40:                // arrow key down
-        this._previousSlide();
+        this._nextSlide();
         break;
     }
   }
@@ -127,7 +127,7 @@ class Presentation {
       this._decreasePageNumber();
       
       if (this._index == 0) {
-        this._stage.classes..add('mainPAge')..remove('slidePage');
+        this._stage.classes..add('mainPage')..remove('slidePage');
         this._footer.style.display = "none";
       }
     }
