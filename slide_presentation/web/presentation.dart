@@ -156,8 +156,8 @@ void main() {
   /* create a new presentation instance and pass 
    * all slides from the slide directory to the 
    * presentation object*/
-  var presentation = new Presentation([ 'slide_01', 'slide_02', 'slide_03', 
-                                        'slide_04', 'footer']);
+  var presentation = new Presentation([ 'slide_01', 'slide_02', 
+                                        'slide_03', 'slide_04']);
   // declare keyboard input to the handle method of the presentations
   window.onKeyDown.listen((event) => presentation.handleKeyboardInput(event.keyCode));
 }
